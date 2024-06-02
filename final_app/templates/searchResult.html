@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+>
+{% block  body %}
+    {% for card in data %}
+        <div class="container">
+            <br>
+            <ul class="list-group">
+                <li class="list-group-item">NAME : {{card["NAME"]}}</li>
+                <li class="list-group-item">ORG : {{card["ORG"]}}</li>
+                <li class="list-group-item">DES : {{card["DES"]}}</li>
+                <li class="list-group-item">PHONE : {{card["PHONE"]}}</li>
+                <li class="list-group-item">EMAIL : {{card["EMAIL"]}}</li>
+                <li class="list-group-item">WEB : {{card["WEB"]}}</li>
+            </ul>
+            
+        </div>
+    {% endfor%}
+{% endblock  %}

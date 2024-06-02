@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+
+{% block  body %}
+<br><br>
+<form action="/search" method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="org" class="form-label">Organization </label>
+        <input type="text" class="form-control" name="org" id="1" placeholder="Enter organization name">
+    </div>
+    <button type="submit">Search</button>
+</form>
+{% endblock  %}
